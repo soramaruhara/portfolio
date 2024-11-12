@@ -1,0 +1,828 @@
+﻿一@charset "UTF-8";
+
+*,*::before,*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix::after{
+content:"";
+display: block;
+clear: both;
+}
+
+html{
+	font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-size: cover;
+	width: 100%;
+	margin: 0 auto;
+	color: #444;
+	font-size: 62.5%;
+	font-family: "Yu Gothic Mediam","游ゴシック　Midium",YuGothic,"游ゴシック体","ヒラギノ角ゴ Pro W3",sans-serif;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #444;
+}
+
+header{
+	width: 100%;
+}
+
+main{
+	width: 1170px;
+	margin: 120px auto;
+}
+
+/*ヘッダー*/
+
+.top-header-logo{
+	display: block;
+	text-align: center;
+	margin-top: 20px;
+}
+
+a .header-logo{
+	width: 200px;
+}
+
+a .header-logo:hover{
+	opacity: 0.8;
+}
+
+.header-nav{
+	margin: 80px auto;
+	width: 80%;
+}
+
+.header-nav-item{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+
+.header-list a{
+	display: block;
+	font-size: 2.7rem;
+	transition: 0.15s;
+	text-transform: uppercase;
+	font-family: 'Fredoka One', cursive;
+	color: #111;
+}
+
+.header-list a:hover{
+	border-bottom: solid 2px;
+}
+
+/*メイン*/
+
+.clearfix{
+	margin: 0 auto;
+/*
+	flex-wrap: wrap;
+*/
+}
+
+/*アーティクル*/
+
+article{
+	width: 730px;
+	float: left;
+	font-size: 1.5rem;
+	margin-bottom: 50px;
+}
+
+/*
+.concept{
+	display: block;
+	margin: 40px 0;
+}
+*/
+
+.concept{
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	margin-bottom: 50px;
+	font-size: 4rem;
+	text-transform: uppercase;
+	font-family: 'Fredoka One', cursive;
+	border: solid 2px #444;
+	letter-spacing: 3px;
+}
+
+.subtitle{
+	font-size: 2.2rem;
+	border-bottom: solid 2px #444;
+	margin: 30px 0  ;	
+	padding: 10px 0;
+	text-transform: uppercase;
+	font-family: 'Fredoka One', cursive;
+}
+
+.subtitle2{
+	font-family: "Yu Gothic Mediam","游ゴシック　Midium",YuGothic,"游ゴシック体","ヒラギノ角ゴ Pro W3",sans-serif;
+}
+
+.article-main {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 10px 0 0 0;
+}
+
+.article-left{
+	width: 400px;
+	line-height: 1.7;
+}
+
+.top-article-text{
+	width: 400px;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	font-size: 1.6rem;
+	letter-spacing: 1px;
+	text-indent: 1px;
+
+}
+
+.article-right{
+	width: 300px;
+}
+
+.article-right-pic{
+	display: block;
+	margin: 0 auto;
+}
+
+.name{
+	text-align: center;
+	font-size: 1.7rem;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+/*
+.top-gallery{
+	width: 100%;
+	margin: 15px auto 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.top-gallery-item {
+	width: 297px;
+	height: 370px;
+	margin: 15px 30px 0 0;
+	border: 2px solid #444;
+	z-index: 2;
+}
+
+.top-gallery-icon{
+	width: 300px;
+}
+
+.top-gallery-item2 {
+	width: 297px;
+	height: 370px;
+	margin-top: 15px;
+	border: 2px #444 solid;
+	z-index: 2;
+}
+
+.top-gallery-text{
+	letter-spacing: 1px;
+	text-indent: 1px;
+	font-size: 1.5rem;
+	margin-top: 15px;
+	padding-left: 5px;
+}
+
+.top-gallery-pic{
+	text-align: center;
+	min-width: 100%;
+	height: auto;
+	width: 100%;
+	z-index: -1;
+}
+*/
+
+.covid{
+	width: 100%;
+	margin-top: 60px;
+}
+
+.covid-text{
+	font-size: 1.5rem;
+}
+
+.covid-text{
+	display: block;
+	margin: 30px auto;
+	letter-spacing: 1px;
+	text-indent: 1px;
+	line-height: 2;
+}
+
+.covid-pic{
+	display: block;
+	margin: 60px auto 30px ;
+	width: 100%;
+}
+
+/*アサイド*/
+
+aside{
+	width: 320px;
+	float: right;
+}
+
+.news{
+	font-size: 1.5rem;
+	line-height: 2.5;	
+}
+
+.news .news-item a{
+	display: flex;
+
+}
+
+time {
+	width: 30%;
+	font-weight: bold;
+}
+
+.span-a{
+	width: 70%;
+	padding-left: 30px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+a .span-a:hover{
+	color: cornflowerblue;
+}
+
+.banner{
+	margin: 30px 0 80px;
+}
+
+a .aside-pic{
+	margin: 20px auto;
+	display: block;
+}
+
+a .aside-pic:hover{
+	opacity: 0.8;
+}
+
+
+/*フッター*/
+
+footer{
+	width: 100%;
+	border-top: 2px #444 solid;
+}
+
+.box1{
+	display: flex;
+	justify-content: space-between;
+}
+
+a .footer-logo{
+	display: block;
+	margin: 20px;
+	width: 150px;
+} 
+
+a .footer-logo:hover{
+	opacity: 0.8;
+}
+
+.footer-nav-item{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-list a{
+	font-family: 'Fredoka One', cursive;
+	margin: 20px;
+	font-size: 1.5rem;
+	margin-left: 10px;
+	align-items: baseline;
+}
+
+.footer-list a:hover{
+	color: cornflowerblue;
+}
+
+.copyright{
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 2.0rem;
+}
+
+/*MENU*/
+
+.menu-text-list{
+	width: 100%;
+	margin: 20px 0 20px 0;
+	font-size: 1.5rem;
+	list-style: square;
+	list-style-position: inside;
+}
+.menu-text{
+	list-style-position: inside;
+}
+
+.menu{
+	width: 80%;
+	margin: 0 auto;
+	font-size: 1.5rem;
+	padding: 15px;
+}
+
+.menu-cost{
+	display: flex;
+	justify-content: space-between;
+	margin: 20px;
+}
+
+.menu-title{
+	font-size: 2rem;
+	border:solid 1px #444;
+	margin: 30px 0;
+	text-align: center;
+}
+
+.dog-size-list{
+	margin: 30px 0;
+}
+
+.cost-list{
+	margin: 30px 0;
+}
+
+h4{
+	margin-top: 40px;
+	font-size: 2rem;
+}
+
+/*GALLERY*/
+
+
+.subtil{
+	text-transform: none;
+}
+
+.wrapper .container{
+	margin-top: 40px;
+}
+
+.grid{
+	margin: 0 auto;
+	display: grid;
+	gap: 15px;
+	grid-template-columns: repeat(3, 1fr);
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.bigbox{
+	text-align: center;
+}
+
+.dog-name{
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.page-no{
+	text-align: right;
+}
+
+.page-no a{
+	font-size: 1.5rem;
+	transition: 0.15s;
+}
+
+.page-no a:hover{
+	border-bottom: solid 1px #444;
+}
+
+
+/*NEWS*/
+
+.news-text{
+	font-size: 1.5rem;
+	margin: 50px 0;
+}
+
+.page-change{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+	font-size: 1.3rem;
+}
+
+.page-back a{
+	transition: 0.15s;
+}
+
+.page-back a:hover{
+	border-bottom: solid 1px #444;
+}
+
+.page-next a{
+	transition: 0.15s;
+	margin-right: 100px;
+}
+
+.page-next a:hover{
+	border-bottom: solid 1px #444;
+}
+
+/*ACCESS*/
+
+.access{
+	width: 730px;
+	margin: 30px auto;
+}
+
+.access-left{
+	width: 680px;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
+
+table{
+	font-size: 1.5rem;
+	width: 680px;
+	text-align: center;
+	margin: 20px 0 50px;
+}
+
+tr:nth-child(even){
+	background: #eee;
+}
+
+tr:nth-child(odd){
+	background: #ddd;
+}
+
+th{
+	width: 230px;
+	line-height: 2.5;
+}
+
+td{
+	width: 450px;
+	text-align: center;
+	line-height: 1.9;
+}
+
+.google{
+	width: 680px;
+	height: 350px;
+	display: block;
+}
+/*
+
+
+.access{
+	margin-top: 30px;
+	display: flex;
+	justify-content:space-between; 
+}
+
+.access-left{
+	width: 370px;
+}
+
+table{ 
+	font-size: 1.4rem;
+	width: 370px;
+}
+
+tr:nth-child(even){
+	background: #aaa;
+}
+
+tr:nth-child(odd){
+	background: #ccc;
+}
+
+th{
+	width: 130px;
+	font-style: 1.5rem;
+}
+
+td{
+	width: 240px;
+	text-align: center;
+}
+*/
+
+/*CONTACT*/
+
+.contact-text{
+	margin: 25px 0;
+	font-size: 1.5rem;
+}
+
+
+.red{
+	color: red;
+	font-size: 1.2rem;
+}
+
+.form-style{
+	width: 85%;
+	height: 30px;
+	border: 1px solid #ddd;
+	line-height: 30px;
+	padding: 1%;
+	margin-bottom: 20px;
+}
+
+.contact-form-list{
+	font-weight: bold;
+}
+
+textarea{
+	width: 85%;
+	height: 130px;
+	border: 1px solid #ddd;
+	line-height: 1.7;
+	padding: 1%;
+}
+
+.btn{
+	margin-top: 30px;
+	width: 85%;
+	text-align: right;
+}
+
+.button{
+	text-align: center;
+	margin: 20px auto;
+	border: 1px solid #ddd;
+	padding:8px;
+}
+
+.button:hover{
+	background: #888;
+}
+
+input[type=submit]:hover{
+	color: #fff;
+}
+
+/*レスポンシブ*/
+
+@media only screen and (max-width: 600px){
+	a .header-logo{
+		width: 100px;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	a .footer-logo{
+		width: 80px;
+	}
+}
+
+
+@media only screen and (max-width: 1024px){
+	.header-list a{
+		display: block;
+		font-size: 1.5rem;
+		width: 90%;
+	}
+}
+/*
+@media only screen and (max-width: 600px){
+	.header-list a:hover{
+		border-bottom: solid 1px 
+	}
+}
+*/
+
+	
+@media only screen and (max-width: 1024px){
+	main{
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width:1024px){
+	.content article{
+		width: 95%;
+		clear:both;
+		float: none;
+		margin: 0 auto;
+		padding: 10px 0;	
+	}
+}
+
+@media only screen and (max-width: 1024px){
+	.covid-text{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 1024px){
+	.covid-pic{
+	width: 90%;
+	}
+}
+
+@media only screen and (max-width: 1024px){
+	.content aside{
+		display: block;
+		width: 95%;
+		clear:both;
+		float: none;
+		margin: 0 auto;
+		padding: 10px 0;
+	}
+}
+
+@media only screen and (max-width:1024px){
+	aside .aside-pic{
+		width: 320px;
+		display: block;
+		margin: 20px auto;
+	}
+}
+
+@media only screen and (max-width: 420px){
+	.header-list a{
+		font-size: 1.0rem;
+	}
+}
+
+@media only screen and (max-width: 630px){
+	.article-main{
+		display: block;
+		margin: 30px auto;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	.top-article-text
+	{
+/*		width: 300px;*/
+		margin: 0 auto;
+		display: block;
+}
+@media only screen and (max-width: 600px){
+	.article-right
+	{
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 600px){
+	.article-left
+	{
+		display: block;
+		margin: 0 auto;
+		width: 95%;
+	}
+}
+
+@media only screen and (max-width: 420px){
+	.footer-logo a{
+		width: 80px;
+	}
+}
+
+@media only screen and (max-width: 630px){
+	.footer-list a{
+		font-size: 1.0rem;
+	}
+}
+
+/*menu*/
+
+@media only screen and (max-width: 400px){
+	.menu{
+		width: 90%;
+	}
+}
+
+
+@media only screen and (max-width: 400px){
+	.menu-cost{
+		font-size: 1.1rem;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	.menu-title{
+		font-size: 1.2rem;
+	}
+}
+
+
+
+
+
+/*access*/
+
+@media only screen and (max-width: 900px){
+	table{
+		width: 500px;
+	}
+}
+@media only screen and (max-width: 650px){
+	table{
+		width: 300px;
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width: 900px){
+	.google{
+		width: 500px;		
+	}
+}
+
+@media only screen and (max-width: 650px){
+	.google{
+		width: 300px;	
+		height: 200px;
+	}
+}
+
+/*NEWS*/
+
+@media only screen and (max-width: 1024px){
+	.news{
+	font-size: 1.5rem;
+	line-height: 1.9;
+	}
+}
+
+@media only screen and (max-width: 1024px){
+	.news time{
+	display: inline;
+	width: auto;
+	}
+}
+
+
+@media only screen and (max-width: 1024px){
+	.news .span-a{
+	padding-left: 30px;
+	display: inline;
+	width: auto;
+	}
+}
+
+/*GALLERY*/
+
+@media only screen and (max-width: 630px){
+	.grid{
+		display: block;
+		margin-bottom: 30px;
+	}
+}
+@media only screen and (max-width: 630px){
+	.dog-name{
+		margin-bottom: 20px;
+	}
+}
+
+
+@media only screen and (max-width: 420px){
+	.grid{
+		display: block;		
+	}
+}
+
+
+@media only screen and (max-width: 630px){
+	.dog-name{
+		margin-bottom: 10px;
+	}
+}
+
+
+
