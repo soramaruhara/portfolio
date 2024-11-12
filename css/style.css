@@ -1,0 +1,549 @@
+@charset "UTF-8";
+html{
+    width: 100%;
+    background: #efefef;
+    color: #222;
+    font-family: "Yu Gothic Mediam","游ゴシック Midium",YuGothic,"游ゴシック体","ヒラギノ角ゴ Pro W3",sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+    }
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #efefef;
+    color: #494949;
+    max-width: 1200px; /* 中央寄せの最大幅を1200pxに設定 */
+    margin: 0 auto; /* 内容部分を中央揃え */
+}
+
+header{
+    width: 100%;
+    margin: 0 auto;
+    color: #222;
+}
+
+h1{
+    text-transform: uppercase;
+    background: #000;
+    line-height: 40px;
+    width: 200px;
+    text-align: center;
+    font-family: serif;
+}
+
+h1 a{
+    color: #fff;
+    font-size: 25px;
+    background: #292929;
+    height: 40px;
+    display: block;
+}
+
+h1 a:hover{
+    background: #494949;
+}
+
+a{
+    text-decoration: none;
+    color: #494949;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+.headerItem a{
+    text-decoration: none;
+    display: block;
+    margin-left: 120px;
+    color: #222;
+}
+
+.headerItem a:hover{
+    color: #aaa;
+}
+
+.headerTop{
+    display: flex;
+    justify-content: space-between;
+    /* background: orange; */
+}
+
+main{
+    margin-top: 130px;
+    width: 100%;
+}
+
+.mainBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.textSub{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: serif;
+}
+
+.mainPic{
+    display: block;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.sectionBox{
+    display: flex;
+    align-items: baseline;
+}
+
+.translation{
+    margin-left: 20px;
+    font-size: 15px;
+    color: #494949;
+    font-family: serif;
+}
+
+h3{
+    font-size: 60px;
+    font-family: serif;
+}
+
+.name{
+    text-transform: uppercase;
+    font-size: 80px;
+    line-height: 80px;
+    font-family: serif;
+}
+
+
+.works{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+    line-height: 10px;
+    border-bottom: solid 1px #aaa;
+    padding-bottom: 100px;
+}
+
+.workBox{
+    width: 45%;
+    height: 370px;
+    margin-bottom: 40px;
+    background: white;
+    line-height: 5px;
+    padding: 20px 20px 10px 20px;
+}
+
+.workBox a {
+    display: block;
+}
+
+.workBox a:hover{
+    opacity: 0.8;
+}
+
+.workBox1{
+    width: 45%;
+    height: 370px;
+    margin-bottom: 40px;
+    background: white;
+    line-height: 5px;
+    padding: 20px 20px 10px 20px;
+}
+
+.workBox1 a {
+    display: block;
+}
+
+.workBox1 a:hover{
+    opacity: 0.8;
+}
+
+.workPic1{
+    border: #292929 1px solid;
+    display: block;
+    width: 88%;
+    margin: 0 auto;
+}
+
+.workBox2{
+    width: 45%;
+    height: 400px;
+    margin-bottom: 40px;
+    background: white;
+    line-height: 5px;
+    padding: 20px 20px 10px 20px;
+}
+
+.workBox2 a {
+    display: block;
+}
+
+.workBox2 a:hover{
+    opacity: 0.8;
+}
+
+
+.workPic{
+    display: block;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.workPic2{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    border: #292929 1px solid;
+}
+
+.workName{
+    margin-top: 35px;
+    padding-left: 20px;
+}
+
+.workType{
+    display: block;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #aaa;
+}
+
+footer{
+    margin-top: 100px;
+    width: 100%;
+}
+
+.footerTop{
+    background: #111;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+    line-height: 30px;
+}
+
+span{
+    font-size: 19px;
+    display: block;
+}
+
+.footerText{
+    font-family: serif;
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.footerText::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.4s ease;
+}
+
+.footerText:hover::after {
+    width: 100%;
+}
+
+
+.pagetop {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background: #fff;
+    border: solid 2px #494949;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 2; */
+}
+
+.pagetop__arrow {
+    height: 10px;
+    width: 10px;
+    border-top: 3px solid #494949;
+    border-right: 3px solid #494949;
+    transform: translateY(20%) rotate(-45deg);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .pagetop:hover, .pagetop:hover .pagetop__arrow {
+        border-color: #aaa;
+    }
+}
+
+.copy{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+/* About.html */
+
+section{
+    border-bottom: solid 1px #aaa;
+    padding-bottom: 170px;
+}
+
+.aboutSection{
+    border-bottom: solid 1px #aaa;
+    padding-bottom: 100px;
+}
+
+.sectionBox2{
+    align-items:flex-start;
+    display: flex;
+    line-height: 70px;
+}
+
+.translation2{
+    font-size: 24px;
+    margin-right: 100px;
+    margin-left: 40px;
+    padding-top: 45px;
+    font-family: serif;
+}
+
+.sectionText{
+    width: 65%;
+    float: right;
+    text-align-last: left;
+}
+
+.subAppear{
+    float: right;
+    width: 65%;
+    line-height: 25px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.subAppearDate{
+    margin-top: 40px;
+    width: 10%;
+    float: left;
+}
+
+.subAppearText{
+    margin-top: 40px;
+    width: 75%;
+    float: right;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3列のグリッド */
+    gap: 20px; /* グリッド間のスペース */
+    justify-content: center; /* 全体の配置を中央揃えにする場合 */
+}
+
+/* ここから */
+.hoverMask-parent{
+    position: relative;
+    overflow: hidden;
+    width: 350px;
+}
+
+.hoverMask{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    transition:all 0.6s ease;
+}
+
+.hoverMask:hover{
+opacity: 1;
+}
+/* ここまで */
+
+/* スタイル調整用 */
+.card{
+&__item{
+    &__thumb{
+    width: 80%;
+    }
+    &__img{
+    width: 100%;
+    height: auto;
+    }
+}
+}
+
+/* デフォルトスタイル調整用 */
+p{
+margin: 0;
+}
+
+img{
+vertical-align: top;
+}
+
+/* banner.html */
+
+.workContents{
+    width: 85%;
+}
+
+.projectName h4{
+    margin-top: 0;
+}
+
+.project{
+    margin-bottom: 1px;
+    font-family: serif;
+    color: #999;
+}
+
+h4{
+    font-size: 50px;
+    font-family: serif;
+}
+
+.bannerPic{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.picBack{
+    background: #dedede;
+    width: 100%;
+    padding: 40px;
+}
+
+.workTypeBox{
+    text-align: right;
+}
+
+.workTypeBox p{
+    display: inline-block;
+}
+
+.workTypeBox .workType2{
+    padding-left: 10px;
+}
+
+.type{
+    color: #999;
+    font-size: 8px;
+}
+
+.discriptionBox {
+    display: flex;
+    margin-left: 300px;
+}
+
+.discriptionItem{
+    float: left;
+    width: 20%;
+    padding-top: 60px;
+}
+
+.discription{
+    float: right;
+    width: 75%;
+    padding-top: 60px;
+}
+
+.discriptionItem p{
+    display: inline-block;
+}
+
+.nextPage{
+    font-family: serif;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 200px;
+}
+
+.pageNext{
+    display: block;
+    padding-left: 18px;
+}
+
+.arrow {
+    width: 80px;
+    height: 8px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    transform: skew(45deg);
+}
+
+.pageBack{
+    display: block;
+    padding-left: 22px;
+}
+
+.arrowleft {
+    width: 80px;
+    height: 8px;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    transform: skew(325deg);
+}
+
+
+
+.nextPage a:hover{
+    color: #aaa;
+}
+
+.allWorks {
+    border-bottom: 1px solid #494949;
+}
+
+.allWorks:hover {
+    border-bottom-color: #aaa; /* ボーダー色の変更 */
+}
+
+.allWorks:hover a {
+    color: #aaa; /* テキストの色 */
+}
+
+
+
+.nextPage a:hover .arrow,
+.nextPage a:hover .arrowleft,
+.nextPage a:hover .allWorks{
+    border-color: #aaa; /* ホバー時の色を指定 */
+}
+
+.url a:hover{
+    color: #aaa;
+}
+
+.bannerPic2{
+
+    padding-top: 30px;
+}
